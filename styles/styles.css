@@ -1,0 +1,189 @@
+article, aside, footer, header, nav, section, body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  float: right;
+}
+
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #000;
+  background-attachment: fixed;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#ffd182));
+  background-image: linear-gradient(#FFFFFF, #ffd182);
+}
+
+#container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+header {
+  height: 100px;
+  text-align: center;
+}
+
+#maincontent {
+  margin-top: 80px;
+  padding: 10px 0;
+}
+
+h1, h2 {
+  color: #000;
+  background-color: #ffd182;
+  padding: 0;
+}
+
+ul, h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  float: right;
+}
+
+.pintglass {
+  margin: 0 auto;
+  width: 200px;
+  height: 350px;
+  position: relative;
+  border-radius: 15px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd182), to(black));
+  background-image: linear-gradient(#ffd182, black);
+}
+
+.topcircle,
+.bottomcircle {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: #000000;
+  /* Set the color for the circles */
+  border-radius: 50%;
+}
+
+.topcircle {
+  top: 0;
+  border: 5px solid #000000;
+  background-color: transparent;
+}
+
+.bottomcircle {
+  bottom: 0;
+}
+
+.iframe {
+  float: right;
+}
+
+#about {
+  background-color: #FFFFFF;
+  border: 5px solid #0b385f;
+  border-radius: 8px;
+}
+
+#about label1 {
+  font-size: 20px;
+}
+
+#about text1 {
+  font-size: 18px;
+}
+
+#vision {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #ffd182;
+  border-radius: 8px;
+  padding: 20px 40px 40px 40px;
+}
+
+#vision img {
+  float: inline-end;
+}
+
+#vision h1 {
+  color: #235391;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+#vision p {
+  font-size: 18px;
+  color: #235391;
+}
+
+#vision a {
+  font-size: 14px;
+}
+
+nav {
+  background-color: #235391;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav li {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+nav a {
+  display: block;
+  width: 140px;
+  float: left;
+  text-decoration: none;
+  color: #000;
+  background-color: #ffd182;
+  margin: 5px 0;
+}
+
+nav a:hover, nav a:active, nav a:focus {
+  background-color: #bcbcbc;
+}
+
+.pod {
+  background-color: #235391;
+  padding: 10px 10px 10px 10px;
+  float: left;
+  text-align: center;
+  margin: 5px;
+  border-radius: 15px;
+  width: 50%;
+  width: 45%;
+}
+
+.pod .podContent {
+  margin-top: 5px;
+  width: 50%;
+  overflow: hidden;
+}
+
+#news .pod {
+  margin-top: 12px;
+  overflow: auto;
+}
+
+footer {
+  clear: both;
+  padding: 20px;
+  color: #FFFFFF;
+  background-color: #235391;
+}
+
+footer p {
+  margin: 0 0 5px 0;
+  color: black;
+}
+/*# sourceMappingURL=styles.css.map */

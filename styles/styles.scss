@@ -1,0 +1,233 @@
+
+$primary-color: #235391;
+$secondary-color: #ffd182;
+$tertiary-color: #FFFFFF;
+$darktext-color: #000;
+$background-light:#bcbcbc;
+$font-link-followed:rgba(255, 255, 255, 0.2);
+$font-link-focus:rgba(255, 255, 255, 0.4);
+
+$font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+$secondary-font-famiy:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+$minmargin: 0;
+$minpadding:0;
+$floatmargin:0 auto;
+
+$font-small: 14px;
+$font-medium: 18px;
+$font-large:20px;
+$font-super:40px;
+
+article, aside, footer, header, nav, section, body{
+    margin: $minmargin;
+    padding: $minpadding;
+}
+
+section{
+    float:right;
+}
+
+body{
+    font-family: $font-family;
+    color: $darktext-color;
+    //background-color: $background-light;
+    background-attachment:fixed;
+    height:100%;
+    background-image: linear-gradient($tertiary-color, $secondary-color);
+}
+#container{
+    max-width: 75%;
+    margin: $floatmargin;
+}
+header{ 
+    height: 100px;
+    text-align: center;
+    //background-color: $tertiary-color;
+}
+#maincontent{
+    margin-top: 80px;
+    padding: 10px 0;
+}
+
+h1, h2{
+    color:$darktext-color;
+    background-color: $secondary-color;
+    padding: $minpadding;
+}
+ul, h1, h2{
+    margin: $minmargin;
+    padding: $minpadding;
+}
+iframe{
+    float: right;
+}
+.pintglass {
+    margin: $floatmargin;
+    //text-align: center;
+    //padding-top: 30px;
+    width: 200px;
+    height: 350px;
+    //top: 0;
+    position: relative;
+    border-radius: 15px;
+    background-image: linear-gradient($secondary-color, black)
+    
+  }
+  
+  .topcircle,
+  .bottomcircle {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: #000000; /* Set the color for the circles */
+    border-radius: 50%;
+  }
+  
+  .topcircle {
+   
+    top: 0;
+    border: 5px solid #000000;
+    background-color: transparent;
+  }
+
+  .bottomcircle {
+    bottom: 0;
+   
+  }
+
+  .iframe{
+      float: right;
+  }
+
+
+//mixin
+@mixin navMenu{
+
+    ul{
+    
+        list-style: none;
+        margin-bottom: 15px;
+        font-weight: bold;
+        font-size: $font-large;
+    }
+    li{
+        //float: center;
+       padding-left: 15%;
+       padding-right: 15%;
+    }
+    a{
+        display: block;
+        width: 140px;
+        float: left;
+        text-decoration: none;
+        color: $darktext-color;
+        background-color: $secondary-color;
+        margin: 5px 0;
+        &:hover, &:active, &:focus{
+        background-color: $background-light;
+       
+       // box-shadow: 1px 1px 3px rgba(0,0,0,.80);
+        //text-shadow: 1px 1px 3px rgba(0,0,0,.80);
+           
+        }
+        &:link, &:visited{
+            //background-color: $font-link-followed;
+        }
+        
+    }
+}
+
+
+#about{
+
+    background-color: $tertiary-color;
+    border: 5px solid #0b385f;
+    border-radius: 8px;
+
+    label1{
+        font-size: $font-large;
+    }
+    text1{
+        font-size: $font-medium;
+    }
+
+}
+
+#vision{
+    font-family: $secondary-font-famiy;
+    font-size: $font-super;
+    font-weight: bold; 
+    background-color: $secondary-color;
+    border-radius: 8px;
+    padding: 20px 40px 40px 40px;
+    img{
+        float: inline-end;
+    }
+
+    h1{
+        color: $primary-color;
+        text-shadow: 1px 1px 3px rgba(0,0,0,.80);
+    }
+    p{
+        font-size: $font-medium;
+        color: $primary-color;
+    }
+   
+    a{
+        font-size: $font-small;
+    }
+   // margin-bottom: 20px;
+
+}
+
+@mixin pod{
+    background-color: $primary-color;
+    padding: 10px 10px 10px 10px;
+    //width: 50%;
+    float: left;
+    text-align: center;
+    margin: 5px;
+    border-radius: 15px;
+    width: 50%;
+    
+
+    .podContent{
+        
+        margin-top: 5px;
+        width: 50%;
+        //height: 250px;
+        //background-color: yellow;
+        overflow: hidden;
+    }
+
+    #news & {
+        margin-top: 12px;
+        overflow: auto;
+    }
+   
+   
+
+
+
+}
+
+nav{
+    @include navMenu();
+    background-color: $primary-color;
+    padding: 20px;
+    text-align: center;
+}
+.pod{
+    @include pod;
+    width: 45%;
+}
+footer{
+    clear: both;
+    padding: 20px; 
+    color: $tertiary-color;
+    background-color: $primary-color;
+    p{
+        margin: 0 0 5px 0;
+        color: black;
+    }
+}
