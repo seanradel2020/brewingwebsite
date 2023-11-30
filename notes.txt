@@ -1,0 +1,4 @@
+Unfortunately I did not have the opportunity to use media queries to implement more than one viewport size.
+That update will come with the final project submission. 
+
+I also had to change the color scheme from the original design. My secondary color and white background did not look as good as anticipated. 
